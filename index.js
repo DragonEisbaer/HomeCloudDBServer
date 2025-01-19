@@ -10,7 +10,7 @@ const db = require("./models");
 //Routes
 const userroute = require("./routes/Users");
 const helloroute = require("./routes/Hello");
-app.use("/users", userroute);
+app.use("/auth", userroute);
 app.use("/hello", helloroute);
 
 db.sequelize.sync().then(() => {
